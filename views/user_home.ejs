@@ -1,0 +1,11 @@
+<h3>User Home</h3>
+<h5>Hello <%= user[0].username%>!</h5>
+<p>You policies : </p>
+<%for(var i=0; i<user[0].buys.length; i++)
+{%>
+    <%= user[0].buys[i].policy %>
+    <%= user[0].buys[i].sum %>
+    <%= user[0].buys[i].time %>
+    <br>
+<%}%>
+<a href="/logout">Logout</a>
